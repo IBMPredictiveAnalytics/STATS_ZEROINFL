@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS ZEROINFL Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+
+
+
+
+</head>
+
+<body>
+<!-- rmarkdown v1 -->
+
+<h1>STATS ZEROINFL Extension Command</h1>
+
+<p>Estimate a mixture model with a Poisson or negative binomial count model and a point mass at zero</p>
+<div class="syntax">
+<p>STATS ZEROINFL<br/>
+MODELSOURCE = ESTIMATE<sup>&#42;&#42;</sup> or FILE or WORKSPACE<br/>
+MODELFILE = &ldquo;file&rdquo;<br/>
+DEPENDENT = variable<br/>
+COUNTMODEL = variables<br/>
+ZEROMODEL = variables<br/>
+SAMEREGRESSORS = YES or NO<sup>&#42;&#42;</sup><br/>
+COUNTOFFSET = variable<br/>
+ZEROOFFSET = variable<br/>
+COUNTDIST = POISSON<sup>&#42;&#42;</sup> or NEGBIN or GEOMETRIC<br/>
+ZEROLINK = LOGIT<sup>&#42;&#42;</sup> or PROBIT or CLOGLOG or CAUCHIT or LOG</p>
+
+<p>/OPTIONS<br/>
+STARTVALUES = GENLIN<sup>&#42;&#42;</sup> or EM<br/>
+OPTMETHOD = BFGS<sup>&#42;&#42;</sup> or NELDERMEAD or CG or LBFGSB or SANN or BRENT<br/>
+MAXITER = number<br/>
+TOL = number<br/>
+MISSING = EXCLUDE<sup>&#42;&#42;</sup> or FAIL</p>
+
+<p>/SAVE<br/>
+DATASET=dataset<br/>
+ID = variable<br/>
+WORKSPACEACTION = CLEAR<sup>&#42;&#42;</sup> or RETAIN<br/>
+WORKSPACEOUTFILE = &ldquo;file&rdquo;</p>
+
+<p>/HELP</p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>STATS ZEROINFL /HELP displays this help and does nothing else.</p>
+
+<pre class="example"><code>
+STATS ZEROINFL DEPENDENT=y COUNTMODEL = x1 x2 x3
+ZEROMODEL= w1 COUNTDIST= NEGBIN
+/SAVE DATASET=results ID=id WORKSPACEOUTFILE=&quot;C:/myproject/zero.Rdata&quot;.
+</code></pre>
+
+<p>This command operates in two modes.  It can be used to estimate
+a model, or it can be used with a model previously estimated
+and saved in memory or a file to make predictions for new data.</p>
+
+<p><strong>MODELSOURCE</strong> specifies the model source.  The choices are</p>
+
+<ul>
+<li><strong>ESTIMATE</strong>: estimate a model using data in the current active dataset</li>
+<li><strong>WORKSPACE</strong>: use the model in the currently loaded workspace.
+The model must come from a previously run command in
+the current session with
+MODELSOURCE=ESTIMATE and retained in memory with
+WORKSPACEACTION=RETAIN.</li>
+<li><strong>FILE</strong>: use a previously created model that was saved
+to a file with WORKSPACEOUTFILE.</li>
+</ul>
+
+<p><strong>MODELFILE</strong> specifies the file containing the model
+and is required if MODELSOURCE=FILE is used.</p>
+
+<p><strong>DEPENDENT</strong> specifies the dependent variable, which
+is expected to contain counts.  It is required in
+estimation mode.  It must have a scale measurement level.</p>
+
+<p><strong>COUNTMODEL</strong> specifies one or more independent variables
+for the count and is required in estimation mode.</p>
+
+<p><strong>ZEROMODEL</strong> can specify a different set of predictors
+for the zero/nonzero portion of the model.  If omitted,
+the model depends on the setting for SAMEREGRESSORS.</p>
+
+<p><strong>SAMEREGRESSORS</strong> specifies whether the predictors
+for the zero model are the same as for the count model.
+If it is NO, and no ZEROMODEL variables are supplied,
+the zero model is the same for all cases, i.e., the
+zero model predictors consist just of a constant term.</p>
+
+<p><strong>COUNTOFFSET</strong> can specify an offset for the count model.</p>
+
+<p><strong>ZEROOFFSET</strong> can specify an offset for the zero model.
+The SAMEREGRESSORS setting does not apply to the zerooffset
+specification.</p>
+
+<p><strong>COUNTDIST</strong> specifies the distribution for the count model.
+The choices are</p>
+
+<ul>
+<li><strong>POISSON</strong>: Poisson</li>
+<li><strong>NEGBIN</strong>: Negative binomial</li>
+<li><strong>GEOMETRIC</strong>: Negative binomial with a size (number of failures) parameter of 1.</li>
+</ul>
+
+<p><strong>ZEROLINK</strong> specifies the link function for the binary
+zero-inflation model.  The choices are</p>
+
+<ul>
+<li><strong>LOGIT</strong>: logistic</li>
+<li><strong>PROBIT</strong>: probit</li>
+<li><strong>CLOGLOG</strong>: Complementary log log</li>
+<li><strong>CAUCHIT</strong>: Cauchy quantiles</li>
+<li><strong>LOG</strong>: log</li>
+</ul>
+
+<h2>OPTIONS</h2>
+
+<p><strong>STARTVALUES</strong> specifies whether the intial values for the
+iterative estimation algorithm come from a generalized linear
+model or from an EM (estimation maximization) model.  The EM
+algorithm uses a generalized linear model first step, so it
+is possible to get a failure message referring to glm when
+EM is the setting.</p>
+
+<p><strong>OPTMETHOD</strong> specifies the iterative solving algorithm.
+The choices are</p>
+
+<ul>
+<li><strong>BFGS</strong>: Quasi Newton</li>
+<li><strong>Nelder-Mead</strong>: A robust but slow method that does not
+use gradients</li>
+<li><strong>CG</strong>: Conjugate gradient</li>
+<li><strong>SANN</strong>: variant of simulated annealing</li>
+</ul>
+
+<p><strong>MAXITER</strong> specifies the maximum number of iterations
+and defaults to 1000.</p>
+
+<p><strong>TOL</strong> specifies the convergence tolerance and typically defaults to
+1.64 &#42; 10<sup>-10.</sup></p>
+
+<p><strong>MISSING</strong> specifies whether cases with missing values are
+omitted or cause the procedure to stop.</p>
+
+<h2>SAVE</h2>
+
+<p><strong>DATASET</strong> specifies the output dataset name.  The name
+must not already be in use.  For estimation, the dataset
+will contain the fitted values and residuals.  For prediction,
+it will contain the predicted values and is required.</p>
+
+<p><strong>ID</strong> optionally specifies an id variable to be
+included in the dataset.  If one is not specified, the
+cases are sequentially numbered.</p>
+
+<p><strong>WORKSPACEACTION</strong> specifies whether to clear the
+in-memory workspace after the procedure (CLEAR) or
+to retain it for following prediction calculations.</p>
+
+<p><strong>WORKSPACEOUTFILE</strong> specifies whether to save the
+estimated model to a file.  It only applies to
+estimation model.</p>
+
+<h3>Reference</h3>
+
+<p>Zeileis, Achim, Christian Kleiber and Simon Jackman 2008. <em>Regression Models for Count Data in R.</em>, Journal of Statistical Software, 27(8). <a href="http://www.jstatsoft.org/v27/i08/">http://www.jstatsoft.org/v27/i08/</a>.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+

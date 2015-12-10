@@ -1,0 +1,308 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_ZEROINFL.R:37
+msgid "Zero Inflation Counts"
+msgstr ""
+"Отсчеты с нулевой инфляцией"
+
+#: STATS_ZEROINFL.R:38
+msgid "Zero Inflation Counts: Warnings"
+msgstr ""
+"Отсчеты с нулевой инфляцией: предупреждения"
+
+#: STATS_ZEROINFL.R:43
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"Необходим пакет R %s, но его не удалось загрузить."
+
+#: STATS_ZEROINFL.R:49
+msgid "In estimation mode, the dependent and count model variables are required"
+msgstr ""
+"В режиме оценки требуются переменные модели отсчетов и зависимой модели"
+
+#: STATS_ZEROINFL.R:54
+msgid "Cannot specify the zero model regressor list if same regressor option chosen"
+msgstr ""
+"Невозможно задать список регрессоров нулевой модели, если выбрана та же опция регрессора"
+
+#: STATS_ZEROINFL.R:65
+msgid "A dataset name must be specified for predict mode"
+msgstr ""
+"Для режима предсказания нужно задать имя набора данных"
+
+#: STATS_ZEROINFL.R:69
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"Как источник модели был указан файл, но не дано имя"
+
+#: STATS_ZEROINFL.R:72
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"Источником модели было взято рабочее пространство, но не задан входной файл модели"
+
+#: STATS_ZEROINFL.R:80
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"Для использования этой процедуры у активного набора данных должно быть имя"
+
+#: STATS_ZEROINFL.R:84
+msgid "The output dataset name must not already be in use"
+msgstr ""
+"Имя выходного набора данных не может уже использоваться"
+
+#: STATS_ZEROINFL.R:98
+msgid "The workspace does not contain a ZEROINFL model"
+msgstr ""
+"Рабочее пространство не содержит модель ZEROINFL"
+
+#: STATS_ZEROINFL.R:113
+msgid "Offset variables cannot be categorical variables"
+msgstr ""
+"Переменные смещения не могут быть категориальными переменными"
+
+#: STATS_ZEROINFL.R:137
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"Требование сохранения рабочего пространства игнорируется, так как команда не оценивает модель"
+
+#: STATS_ZEROINFL.R:190
+msgid "Dependent Variable"
+msgstr ""
+"Зависимая переменная"
+
+#: STATS_ZEROINFL.R:191
+msgid "Count Model Distribution"
+msgstr ""
+"Распределение модели отсчетов"
+
+#: STATS_ZEROINFL.R:192
+msgid "Zero-Inflation Link Model"
+msgstr ""
+"Модель связей с нулевой инфляцией"
+
+#: STATS_ZEROINFL.R:193
+msgid "Count Model Offset"
+msgstr ""
+"Смещение модели отсчетов"
+
+#: STATS_ZEROINFL.R:194
+msgid "Zero-Inflation Model Offst"
+msgstr ""
+"Смещение модели с нулевой инфляцией"
+
+#: STATS_ZEROINFL.R:195
+msgid "Missing Value Treatment"
+msgstr ""
+"Способ обработки пропущенных значений"
+
+#: STATS_ZEROINFL.R:196
+msgid "Starting Value Method"
+msgstr ""
+"Метод начального значения"
+
+#: STATS_ZEROINFL.R:197
+msgid "Convergence"
+msgstr ""
+"Сходимость"
+
+#: STATS_ZEROINFL.R:198
+msgid "Number of Cases"
+msgstr ""
+"Количество наблюдений"
+
+#: STATS_ZEROINFL.R:199
+msgid "Log Likelihood"
+msgstr ""
+"Логарифмическое правдоподобие"
+
+#: STATS_ZEROINFL.R:200
+msgid "Log Likelihood D. F."
+msgstr ""
+"D. F. логарифмического правдоподобия"
+
+#: STATS_ZEROINFL.R:201
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_ZEROINFL.R:202
+msgid "Theta"
+msgstr ""
+"Тэта"
+
+#: STATS_ZEROINFL.R:203
+msgid "SE log(theta)"
+msgstr ""
+"SE log(тэта)"
+
+#: STATS_ZEROINFL.R:204
+msgid "Output Dataset"
+msgstr ""
+"Выходной набор данных"
+
+#: STATS_ZEROINFL.R:205
+msgid "Computational Algorithm"
+msgstr ""
+"Вычислительный алгоритм"
+
+#: STATS_ZEROINFL.R:206
+msgid "Number of Iterations"
+msgstr ""
+"Количество итераций"
+
+#: STATS_ZEROINFL.R:207
+msgid "Maximum Number of Iterations"
+msgstr ""
+"Максимальное количество итераций"
+
+#: STATS_ZEROINFL.R:208
+msgid "Convergence Tolerance"
+msgstr ""
+"Допуск для сходимости"
+
+#: STATS_ZEROINFL.R:209
+msgid "Model Estimation Date"
+msgstr ""
+"Дата оценки модели"
+
+#: STATS_ZEROINFL.R:216
+#: STATS_ZEROINFL.R:217
+#: STATS_ZEROINFL.R:225
+#: STATS_ZEROINFL.R:226
+#: STATS_ZEROINFL.R:227
+msgid "--NA--"
+msgstr ""
+"--НП--"
+
+#: STATS_ZEROINFL.R:220
+msgid "Yes"
+msgstr ""
+"Да"
+
+#: STATS_ZEROINFL.R:220
+msgid "No"
+msgstr ""
+"Нет"
+
+#: STATS_ZEROINFL.R:235
+#: STATS_ZEROINFL.R:236
+#: STATS_ZEROINFL.R:236
+msgid "Summary"
+msgstr ""
+"Итог"
+
+#: STATS_ZEROINFL.R:237
+msgid "Computations done by R package pscl"
+msgstr ""
+"Вычисления выполнены пакетом R pscl"
+
+#: STATS_ZEROINFL.R:241
+msgid "Estimate"
+msgstr ""
+"Оценка"
+
+#: STATS_ZEROINFL.R:242
+msgid "Std. Error"
+msgstr ""
+"Стд. ошибка"
+
+#: STATS_ZEROINFL.R:243
+msgid "z Value"
+msgstr ""
+"z-значение"
+
+#: STATS_ZEROINFL.R:244
+msgid "Significance"
+msgstr ""
+"Значимость"
+
+#: STATS_ZEROINFL.R:249
+msgid "Count Model Coefficients"
+msgstr ""
+"Коэффициенты модели отсчетов"
+
+#: STATS_ZEROINFL.R:251
+msgid "Count Coefficients"
+msgstr ""
+"Коэффициенты отсчетов"
+
+#: STATS_ZEROINFL.R:252
+#: STATS_ZEROINFL.R:261
+msgid "Dependent Variable: %s"
+msgstr ""
+"Зависимая переменная: %s"
+
+#: STATS_ZEROINFL.R:258
+msgid "Zero-Inflation Model Coefficients"
+msgstr ""
+"Коэффициенты модели с нулевой инфляцией"
+
+#: STATS_ZEROINFL.R:260
+msgid "Zero-Inflation Coefficients"
+msgstr ""
+"Коэффициенты нулевой инфляции"
+
+#: STATS_ZEROINFL.R:292
+msgid "The following predictors are missing from the input data: %s"
+msgstr ""
+"Во входном наборе данных отсутствуют следующие предикторы: %s"
+
+#: STATS_ZEROINFL.R:302
+msgid "All cases have missing data.  No predictions are produced"
+msgstr ""
+"У всех классов есть пропущенные данные. Никакие предикторы не сгенерированы"
+
+#: STATS_ZEROINFL.R:310
+msgid "Predicted Response for %s"
+msgstr ""
+"Предсказанный отклик для %s"
+
+#: STATS_ZEROINFL.R:312
+msgid "Pearson Residuals"
+msgstr ""
+"Остатки Пирсона"
+
+#: STATS_ZEROINFL.R:313
+msgid "Raw Residuals"
+msgstr ""
+"Сырые остатки"
+
+#: STATS_ZEROINFL.R:315
+msgid "Count Mean without Inflation"
+msgstr ""
+"Средний отсчет без инфляции"
+
+#: STATS_ZEROINFL.R:316
+msgid "Predicted Probability of Zero"
+msgstr ""
+"Предсказанная вероятность нуля"
+
+#: STATS_ZEROINFL.R:355
+msgid "End of procedure"
+msgstr ""
+"Конец процедуры"
+
+#: STATS_ZEROINFL.R:382
+msgid "Message Number"
+msgstr ""
+"Номер сообщения"
+
+

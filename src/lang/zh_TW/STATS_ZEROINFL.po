@@ -1,0 +1,308 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_ZEROINFL.R:37
+msgid "Zero Inflation Counts"
+msgstr ""
+"零膨脹計數"
+
+#: STATS_ZEROINFL.R:38
+msgid "Zero Inflation Counts: Warnings"
+msgstr ""
+"零膨脹計數：警告"
+
+#: STATS_ZEROINFL.R:43
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"R %s 套件是必要套件，但無法載入。"
+
+#: STATS_ZEROINFL.R:49
+msgid "In estimation mode, the dependent and count model variables are required"
+msgstr ""
+"在估計模式中，需要依變數及計數模型變數"
+
+#: STATS_ZEROINFL.R:54
+msgid "Cannot specify the zero model regressor list if same regressor option chosen"
+msgstr ""
+"如果選擇了相同的迴歸自變數選項，則無法指定零模型迴歸自變數"
+
+#: STATS_ZEROINFL.R:65
+msgid "A dataset name must be specified for predict mode"
+msgstr ""
+"必須為預測模式指定資料集名稱"
+
+#: STATS_ZEROINFL.R:69
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"已指定檔案作為模型來源，但未給定名稱"
+
+#: STATS_ZEROINFL.R:72
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"已給定模型來源作為工作區，但指定了輸入模型檔"
+
+#: STATS_ZEROINFL.R:80
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"作用中資料集必須具有名稱，以使用此程序"
+
+#: STATS_ZEROINFL.R:84
+msgid "The output dataset name must not already be in use"
+msgstr ""
+"輸出資料集名稱不得已使用"
+
+#: STATS_ZEROINFL.R:98
+msgid "The workspace does not contain a ZEROINFL model"
+msgstr ""
+"工作區不包含 ZEROINFL 模型"
+
+#: STATS_ZEROINFL.R:113
+msgid "Offset variables cannot be categorical variables"
+msgstr ""
+"偏移變數不能為種類變數"
+
+#: STATS_ZEROINFL.R:137
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"正在忽略工作區儲存要求，因為指令未估計模型"
+
+#: STATS_ZEROINFL.R:190
+msgid "Dependent Variable"
+msgstr ""
+"依變數"
+
+#: STATS_ZEROINFL.R:191
+msgid "Count Model Distribution"
+msgstr ""
+"計數模型分佈"
+
+#: STATS_ZEROINFL.R:192
+msgid "Zero-Inflation Link Model"
+msgstr ""
+"零膨脹鏈結模型"
+
+#: STATS_ZEROINFL.R:193
+msgid "Count Model Offset"
+msgstr ""
+"計數模型偏移"
+
+#: STATS_ZEROINFL.R:194
+msgid "Zero-Inflation Model Offst"
+msgstr ""
+"零膨脹模型偏移"
+
+#: STATS_ZEROINFL.R:195
+msgid "Missing Value Treatment"
+msgstr ""
+"遺漏值處理"
+
+#: STATS_ZEROINFL.R:196
+msgid "Starting Value Method"
+msgstr ""
+"起始值方法"
+
+#: STATS_ZEROINFL.R:197
+msgid "Convergence"
+msgstr ""
+"收斂"
+
+#: STATS_ZEROINFL.R:198
+msgid "Number of Cases"
+msgstr ""
+"觀察值數"
+
+#: STATS_ZEROINFL.R:199
+msgid "Log Likelihood"
+msgstr ""
+"對數概似"
+
+#: STATS_ZEROINFL.R:200
+msgid "Log Likelihood D. F."
+msgstr ""
+"對數概似自由度"
+
+#: STATS_ZEROINFL.R:201
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_ZEROINFL.R:202
+msgid "Theta"
+msgstr ""
+"Theta"
+
+#: STATS_ZEROINFL.R:203
+msgid "SE log(theta)"
+msgstr ""
+"SE 對數 (Theta)"
+
+#: STATS_ZEROINFL.R:204
+msgid "Output Dataset"
+msgstr ""
+"輸出資料集"
+
+#: STATS_ZEROINFL.R:205
+msgid "Computational Algorithm"
+msgstr ""
+"計算演算法"
+
+#: STATS_ZEROINFL.R:206
+msgid "Number of Iterations"
+msgstr ""
+"反覆運算次數"
+
+#: STATS_ZEROINFL.R:207
+msgid "Maximum Number of Iterations"
+msgstr ""
+"反覆運算數目上限"
+
+#: STATS_ZEROINFL.R:208
+msgid "Convergence Tolerance"
+msgstr ""
+"收斂容差"
+
+#: STATS_ZEROINFL.R:209
+msgid "Model Estimation Date"
+msgstr ""
+"模型估計日期"
+
+#: STATS_ZEROINFL.R:216
+#: STATS_ZEROINFL.R:217
+#: STATS_ZEROINFL.R:225
+#: STATS_ZEROINFL.R:226
+#: STATS_ZEROINFL.R:227
+msgid "--NA--"
+msgstr ""
+"--不適用--"
+
+#: STATS_ZEROINFL.R:220
+msgid "Yes"
+msgstr ""
+"是"
+
+#: STATS_ZEROINFL.R:220
+msgid "No"
+msgstr ""
+"否"
+
+#: STATS_ZEROINFL.R:235
+#: STATS_ZEROINFL.R:236
+#: STATS_ZEROINFL.R:236
+msgid "Summary"
+msgstr ""
+"摘要"
+
+#: STATS_ZEROINFL.R:237
+msgid "Computations done by R package pscl"
+msgstr ""
+"由 R 套件 pscl 執行的計算"
+
+#: STATS_ZEROINFL.R:241
+msgid "Estimate"
+msgstr ""
+"估計"
+
+#: STATS_ZEROINFL.R:242
+msgid "Std. Error"
+msgstr ""
+"標準誤"
+
+#: STATS_ZEROINFL.R:243
+msgid "z Value"
+msgstr ""
+"z 值"
+
+#: STATS_ZEROINFL.R:244
+msgid "Significance"
+msgstr ""
+"顯著性"
+
+#: STATS_ZEROINFL.R:249
+msgid "Count Model Coefficients"
+msgstr ""
+"計數模型係數"
+
+#: STATS_ZEROINFL.R:251
+msgid "Count Coefficients"
+msgstr ""
+"計數係數"
+
+#: STATS_ZEROINFL.R:252
+#: STATS_ZEROINFL.R:261
+msgid "Dependent Variable: %s"
+msgstr ""
+"依變數：%s"
+
+#: STATS_ZEROINFL.R:258
+msgid "Zero-Inflation Model Coefficients"
+msgstr ""
+"零膨脹模型係數"
+
+#: STATS_ZEROINFL.R:260
+msgid "Zero-Inflation Coefficients"
+msgstr ""
+"零膨脹係數"
+
+#: STATS_ZEROINFL.R:292
+msgid "The following predictors are missing from the input data: %s"
+msgstr ""
+"輸入資料中遺漏下列預報子：%s"
+
+#: STATS_ZEROINFL.R:302
+msgid "All cases have missing data.  No predictions are produced"
+msgstr ""
+"所有觀察值都具有遺漏資料。未產生預測"
+
+#: STATS_ZEROINFL.R:310
+msgid "Predicted Response for %s"
+msgstr ""
+"%s 的預測回應"
+
+#: STATS_ZEROINFL.R:312
+msgid "Pearson Residuals"
+msgstr ""
+"Pearson 殘差"
+
+#: STATS_ZEROINFL.R:313
+msgid "Raw Residuals"
+msgstr ""
+"原始殘差"
+
+#: STATS_ZEROINFL.R:315
+msgid "Count Mean without Inflation"
+msgstr ""
+"沒有膨脹的計數平均值"
+
+#: STATS_ZEROINFL.R:316
+msgid "Predicted Probability of Zero"
+msgstr ""
+"零的預測機率"
+
+#: STATS_ZEROINFL.R:355
+msgid "End of procedure"
+msgstr ""
+"程序的結尾"
+
+#: STATS_ZEROINFL.R:382
+msgid "Message Number"
+msgstr ""
+"訊息號碼"
+
+

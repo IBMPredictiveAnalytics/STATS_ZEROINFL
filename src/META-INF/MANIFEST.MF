@@ -1,0 +1,18 @@
+Name: STATS ZEROINFL
+Dialog-Specs: STATS_ZEROINFL.spd
+Command-Specs: STATS_ZEROINFL.xml
+Code-Files: STATS_ZEROINFL.R
+Misc-Files: markdown.html,extsyntax.css,IBMdialogicon.png
+Summary: Estimate and predict a zero-inflated count model
+Description: This procedure estimates mixture models consisting of a P
+ oisson or negative binomial count model and a point mass at zero.  Th
+ e predictors can be different for the two models.  The estimated mode
+ l can be saved and used for predictions on new data.
+Author: JKP, IBM SPSS
+Version: 1.0.2
+Product-Version: 18
+Date: 7/29/2014
+Categories: Poisson, negative binomial, zeroinflation, count
+Plugins: R
+R-Packages: pscl
+Translation-Catalogues: lang

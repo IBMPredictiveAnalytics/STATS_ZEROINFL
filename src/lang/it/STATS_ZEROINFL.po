@@ -1,0 +1,308 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_ZEROINFL.R:37
+msgid "Zero Inflation Counts"
+msgstr ""
+"Conteggi inflazione di zeri"
+
+#: STATS_ZEROINFL.R:38
+msgid "Zero Inflation Counts: Warnings"
+msgstr ""
+"Conteggi inflazione di zeri: Avvisi"
+
+#: STATS_ZEROINFL.R:43
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"Il package R %s è necessario, ma non è stato possibile caricarlo."
+
+#: STATS_ZEROINFL.R:49
+msgid "In estimation mode, the dependent and count model variables are required"
+msgstr ""
+"In moda di stima, sono necessarie le variabili del modello di conteggio e dipendenti"
+
+#: STATS_ZEROINFL.R:54
+msgid "Cannot specify the zero model regressor list if same regressor option chosen"
+msgstr ""
+"Impossibile specificare l'elenco di regressori del modello zero se si seleziona la stessa opzione regressore"
+
+#: STATS_ZEROINFL.R:65
+msgid "A dataset name must be specified for predict mode"
+msgstr ""
+"Deve essere specificato un nome dataset per la moda previsione"
+
+#: STATS_ZEROINFL.R:69
+msgid "A file was specified as the model source, but no name was given"
+msgstr ""
+"Un file è stato specificato come origine del modello, ma non è stato specificato alcun nome"
+
+#: STATS_ZEROINFL.R:72
+msgid "The model source was given as workspace, but an input model file was specified"
+msgstr ""
+"L'origine del modello è stata fornita come spazio di lavoro, ma è stato specificato un file di modello di input"
+
+#: STATS_ZEROINFL.R:80
+msgid "The active dataset must have a name in order to use this procedure"
+msgstr ""
+"Il dataset attivo deve avere un nome per poter utilizzare questa procedura"
+
+#: STATS_ZEROINFL.R:84
+msgid "The output dataset name must not already be in use"
+msgstr ""
+"Il nome del dataset di output non deve essere già in uso"
+
+#: STATS_ZEROINFL.R:98
+msgid "The workspace does not contain a ZEROINFL model"
+msgstr ""
+"Lo spazio di lavoro non contiene un modello ZEROINFL"
+
+#: STATS_ZEROINFL.R:113
+msgid "Offset variables cannot be categorical variables"
+msgstr ""
+"Le variabili offset non possono essere variabili categoriali"
+
+#: STATS_ZEROINFL.R:137
+msgid "Ignoring workspace save request because command is not estimating the model"
+msgstr ""
+"Richiesta di salvataggio dello spazio di lavoro ignorata perché il comando non stima il modello"
+
+#: STATS_ZEROINFL.R:190
+msgid "Dependent Variable"
+msgstr ""
+"Variabile dipendente"
+
+#: STATS_ZEROINFL.R:191
+msgid "Count Model Distribution"
+msgstr ""
+"Distribuzione modello di conteggio"
+
+#: STATS_ZEROINFL.R:192
+msgid "Zero-Inflation Link Model"
+msgstr ""
+"Modello di collegamento inflazione di zeri"
+
+#: STATS_ZEROINFL.R:193
+msgid "Count Model Offset"
+msgstr ""
+"Offset modello di conteggio"
+
+#: STATS_ZEROINFL.R:194
+msgid "Zero-Inflation Model Offst"
+msgstr ""
+"Offset modello inflazione di zeri"
+
+#: STATS_ZEROINFL.R:195
+msgid "Missing Value Treatment"
+msgstr ""
+"Trattamento dei valori mancanti"
+
+#: STATS_ZEROINFL.R:196
+msgid "Starting Value Method"
+msgstr ""
+"Metodo valore iniziale"
+
+#: STATS_ZEROINFL.R:197
+msgid "Convergence"
+msgstr ""
+"Convergenza"
+
+#: STATS_ZEROINFL.R:198
+msgid "Number of Cases"
+msgstr ""
+"Numero di casi"
+
+#: STATS_ZEROINFL.R:199
+msgid "Log Likelihood"
+msgstr ""
+"Logaritmo della verosimiglianza"
+
+#: STATS_ZEROINFL.R:200
+msgid "Log Likelihood D. F."
+msgstr ""
+"G. L. logaritmo della verosimiglianza"
+
+#: STATS_ZEROINFL.R:201
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_ZEROINFL.R:202
+msgid "Theta"
+msgstr ""
+"Theta"
+
+#: STATS_ZEROINFL.R:203
+msgid "SE log(theta)"
+msgstr ""
+"Log SE (theta)"
+
+#: STATS_ZEROINFL.R:204
+msgid "Output Dataset"
+msgstr ""
+"Dataset di output"
+
+#: STATS_ZEROINFL.R:205
+msgid "Computational Algorithm"
+msgstr ""
+"Algoritmo di calcolo"
+
+#: STATS_ZEROINFL.R:206
+msgid "Number of Iterations"
+msgstr ""
+"Numero di iterazioni"
+
+#: STATS_ZEROINFL.R:207
+msgid "Maximum Number of Iterations"
+msgstr ""
+"Numero massimo di iterazioni"
+
+#: STATS_ZEROINFL.R:208
+msgid "Convergence Tolerance"
+msgstr ""
+"Tolleranza di convergenza"
+
+#: STATS_ZEROINFL.R:209
+msgid "Model Estimation Date"
+msgstr ""
+"Data della stima modello"
+
+#: STATS_ZEROINFL.R:216
+#: STATS_ZEROINFL.R:217
+#: STATS_ZEROINFL.R:225
+#: STATS_ZEROINFL.R:226
+#: STATS_ZEROINFL.R:227
+msgid "--NA--"
+msgstr ""
+"--NA--"
+
+#: STATS_ZEROINFL.R:220
+msgid "Yes"
+msgstr ""
+"Sì"
+
+#: STATS_ZEROINFL.R:220
+msgid "No"
+msgstr ""
+"No"
+
+#: STATS_ZEROINFL.R:235
+#: STATS_ZEROINFL.R:236
+#: STATS_ZEROINFL.R:236
+msgid "Summary"
+msgstr ""
+"Riepilogo"
+
+#: STATS_ZEROINFL.R:237
+msgid "Computations done by R package pscl"
+msgstr ""
+"Calcoli effettuati da pscl del package R"
+
+#: STATS_ZEROINFL.R:241
+msgid "Estimate"
+msgstr ""
+"Stima"
+
+#: STATS_ZEROINFL.R:242
+msgid "Std. Error"
+msgstr ""
+"Errore std."
+
+#: STATS_ZEROINFL.R:243
+msgid "z Value"
+msgstr ""
+"Valore Z"
+
+#: STATS_ZEROINFL.R:244
+msgid "Significance"
+msgstr ""
+"Significatività"
+
+#: STATS_ZEROINFL.R:249
+msgid "Count Model Coefficients"
+msgstr ""
+"Coefficienti modello di conteggio"
+
+#: STATS_ZEROINFL.R:251
+msgid "Count Coefficients"
+msgstr ""
+"Coefficienti conteggio"
+
+#: STATS_ZEROINFL.R:252
+#: STATS_ZEROINFL.R:261
+msgid "Dependent Variable: %s"
+msgstr ""
+"Variabile dipendente: %s"
+
+#: STATS_ZEROINFL.R:258
+msgid "Zero-Inflation Model Coefficients"
+msgstr ""
+"Coefficienti modello inflazione di zeri"
+
+#: STATS_ZEROINFL.R:260
+msgid "Zero-Inflation Coefficients"
+msgstr ""
+"Coefficienti inflazione di zeri"
+
+#: STATS_ZEROINFL.R:292
+msgid "The following predictors are missing from the input data: %s"
+msgstr ""
+"I seguenti predittori mancano dai dati di input: %s"
+
+#: STATS_ZEROINFL.R:302
+msgid "All cases have missing data.  No predictions are produced"
+msgstr ""
+"Tutti i casi hanno dati mancanti. Non vengono prodotte previsioni "
+
+#: STATS_ZEROINFL.R:310
+msgid "Predicted Response for %s"
+msgstr ""
+"Risposta prevista per %s"
+
+#: STATS_ZEROINFL.R:312
+msgid "Pearson Residuals"
+msgstr ""
+"Residui di Pearson"
+
+#: STATS_ZEROINFL.R:313
+msgid "Raw Residuals"
+msgstr ""
+"Residui grezzi"
+
+#: STATS_ZEROINFL.R:315
+msgid "Count Mean without Inflation"
+msgstr ""
+"Media conteggio senza inflazione"
+
+#: STATS_ZEROINFL.R:316
+msgid "Predicted Probability of Zero"
+msgstr ""
+"Probabilità prevista di zero"
+
+#: STATS_ZEROINFL.R:355
+msgid "End of procedure"
+msgstr ""
+"Fine della procedura"
+
+#: STATS_ZEROINFL.R:382
+msgid "Message Number"
+msgstr ""
+"Numero messaggio"
+
+

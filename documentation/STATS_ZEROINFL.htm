@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Zero-Inflated Count Models</title>
+<STYLE TYPE="text/css"> 
+<!-- 
+
+H1 {font-weight:bold; color:#006699; font-family:Verdana, Arial, sans-serif;font-size:125%; }
+H2 {font-weight:bold; color:#006699; font-family:Verdana, Arial, sans-serif;font-size:110%; }
+TABLE {font-size:100%;font-family:Verdana, Arial, sans-serif;}
+
+/* paragraph tags */
+.step {text-indent: -1.3em; margin-left:1.3em; margin-top: 0px;}
+.menuselection {margin-left:10px}
+.bullet {list-style-type: disc;margin-top:12px; margin-left:36px; text-indent:-1em; }
+.codeblock {background-color: #ffffe6; display:block; margin-left:5px; padding:5px;font-family:"courier new",monospace; }
+
+/* inline tags */
+.code {font-family: Courier,fixed pitch;}                           /*** used to tag pieces of code (syntax, Python, R, HTML, etc.)   ***/
+.screen {font-weight:bold; color:#408080}                       /*** used refer to on-screen text ***/
+.name {font-style: italic}                                                       /*** used to tag names, such as variable names, file names, and so forth ***/
+.runinhead {font-weight: bold} 
+.superscript {vertical-align:super; font-size:80%}
+.subscript {vertical-align:sub; font-size:80%}
+.symbol {font-family: Symbol}
+
+--> 
+</STYLE>
+</head>
+<body>
+<h1>Zero-Inflated Count Models</h1>
+<p>This procedure estimates a mixture model for count data with
+a point mass at zero.  Predictions can be made after estimation
+using an in-memory workspace, or later from a saved
+workspace.
+</p>
+<p>When predicting, the model specification is taken from
+    previous estimation.  Do not enter model parameters in
+    that mode.  The Options dialog is only used
+    for estimation.  The Save subdialog has settings that
+    apply to both modes.
+</p>
+
+<p><span class="runinhead">Model Source</span> Choose whether to
+estimate a model or to make predictions using a previously estimated
+model.  A dataset name for the output must be specified in the Save subdialog if
+making predictions.<p>
+<p>
+</p>Specify the file containing the saved model if predicting from
+a model file.  If using the retained workspace, the Save subdialog must
+have specified that the workspace should be retained, and no other R-based
+procedure may have been run since the model was estimated.  Only the most
+recently estimated model in the workspace is available for use in prediction
+</p>
+
+<p><span class="runinhead">Dependent</span> Select the
+dependent variable.  It is expected to contain counts.
+</p>
+
+<p><span class="runinhead">Count Model Predictors</span> Specify
+the regressors for the count model.
+</p>
+
+<p><span class="runinhead">Use count predictors for zero model</span>
+Check this box to use the same predictors for both the count model and the zero model, and leave
+the Zero Model Predictors field empty.  If the box is not checked,
+you can specify a different set of predictors for the zero model.  
+In that case, if no predictors are specified,  the zero model is
+the same for all cases.  That is, the only predictor is the constant term.
+</p>
+
+<p>Categorical predictors are automatically treated as factors.</p>
+
+<p><span class="runinhead">Zero Model Predictors</span> Specify
+any regressors for the binary 0/1 model unless the box above
+was checked.
+</p>
+
+
+
+<p><span class="runinhead">ID</span> An ID variable
+can be specified to be saved in the estimation and prediction
+dataset.
+</p>
+
+<p><span class="runinhead">Count Model and Zero Model Offsets</span>
+You can specify offset variables for the models. The Use count predictors
+checkbox does not affect these settings.</p>
+
+<h2>Options</h2>
+<p><span class="runinhead">Count Model Distribution</span>
+Choose the distribution for the count model to use with a log link.  The geometric
+distribution is the negative binomial distribution with size (number of failures) parameter 1.
+</p>
+
+<p><span class="runinhead">Link function for Zero Model</span>
+Choose the appropriate link function.  The distribution will be binomial.
+
+<p><span class="runinhead">Missing Values</span> 
+Choose whether to omit cases with missing values or to stop the procedure.
+</p>
+
+<p><span class="runinhead">Method for Finding Starting Values</span> Choose
+    whether to use a generalized linear model or the EM algorithm to
+    calculate the starting values for the iterative estimation procedure.
+</p>
+
+<p><span class="runinhead">Solution Method</span> 
+A variety of solution methods are available.  The default, however, generally works well.
+</p>
+<p><span class="runinhead">Maximum Number of Iterations</span> You can set
+a limit on the number of iterations.
+</p>
+<p><span class="runinhead">Convergence Tolerance</span> You can control
+the definition of convergence here.
+
+<h2>Save</h2>
+<p>The Save subdialog determines what output is saved for future use.
+</p>
+<p><span class="runinhead">Output Dataset</span> 
+This specifies the output dataset name.  For estimation, the dataset
+will contain the fitted values and residuals.  For prediction,
+it will contain the predicted values and is required.
+</p>
+<p class="bullet"> The dataset name must not already be in use.</p>
+
+<p><span class="runinhead">Workspace Action</span>
+Specify whether to clear the
+in-memory workspace after the procedure or
+to retain it for prediction calculations to follow in the same session.</p>
+
+<p><span class="runinhead">Save Workspace</span> specifies whether to save the
+estimated model to a file.  It only applies to
+estimation mode.  A saved workspace can be loaded and used for
+calculating predictions in the future.
+</p>
+
+
+<h2>Additional Features</h2>
+<p>
+This dialog generates syntax for the STATS ZEROINFL extension command. To display syntax help for this command,
+run the following syntax:
+</p>
+<p class="codeblock">STATS ZEROINFL /HELP.</p>
+
+
+<h2>Acknowledgements</h2>
+<p>This procedure uses the R pscl package zeroinfl function by Achim Zeileis.
+</p>
+<h2>References</h2>
+<p>Zeileis, Achim, Christian Kleiber and Simon Jackman 2008. "Regression Models for Count Data in R." Journal of Statistical Software, 27(8). URL http://www.jstatsoft.org/v27/i08/.
+</p>
+
+<h2>Requirements</h2>
+This command requires the R Essentials and the R pscl package
+You can download the Essentials via the SPSS Community website at www.ibm.com/developerworks/spssdevcentral.
+</p>
+  <hr
+  <p style="font-family:Verdana, Arial, sans-serif;font-size:80%;">
+  © Copyright IBM Corp. 2014</p>
+</body>
+</html>
+
