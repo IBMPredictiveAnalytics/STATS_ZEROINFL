@@ -1,11 +1,13 @@
 # STATS ZEROINFL
 ## Estimate and predict a zero-inflated count model.
-Estimate a mixture model with a Poisson or negative binomial count model and a point mass at zero.
+Estimate a mixture model with a Poisson or negative binomial count model and a point mass at zero. The predictors can be different for the two models. The estimated model can be saved and used for predictions on new data.
 
 ---
 Requirements
 ----
-- IBM SPSS Statistics 18 or later
+- IBM SPSS Statistics 18 or later and the corresponding IBM SPSS Statistics-Integration Plug-in for R.
+
+Note: For users with IBM SPSS Statistics version 23 or higher, the STATS ZEROINFL extension is installed as part of IBM SPSS Statistics-Essentials for R.
 
 ---
 Installation intructions
