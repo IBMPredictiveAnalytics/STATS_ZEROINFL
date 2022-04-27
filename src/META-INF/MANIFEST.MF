@@ -9,7 +9,7 @@ Description: This procedure estimates mixture models consisting of a P
  e predictors can be different for the two models.  The estimated mode
  l can be saved and used for predictions on new data.
 Author: JKP, IBM SPSS
-Version: 1.0.2
+Version: 1.0.3
 Product-Version: 18
 Date: 7/29/2014
 Categories: Poisson, negative binomial, zeroinflation, count
