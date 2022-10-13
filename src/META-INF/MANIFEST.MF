@@ -1,4 +1,5 @@
 Name: STATS ZEROINFL
+Display-Name: Zero-Inflated Count Models
 Dialog-Specs: STATS_ZEROINFL.spd
 Command-Specs: STATS_ZEROINFL.xml
 Code-Files: STATS_ZEROINFL.R
